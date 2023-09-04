@@ -1,0 +1,19 @@
+Hello there!
+
+You`re about to test the tech challenge built by myself.
+Please, follow these steps:
+1 - Run the API first. It is implemented using maven, so you know how to make it...
+2 - After running the api, please go to app and run the famouns "ne serve". It'll take a few moments and you can open your preferred browser and access the http://localhost:4200
+It'll bring you the upload page.
+3 - Select a CNAB file, click "Upload" button and see the magic happens.
+
+You can, obviously, choose another method to test, for example, the postman one.
+So, if you go by this way...
+1 - Run the API
+2 - Open the postman or similar and point it to the following URL: http://127.0.0.1:9001/CNABFileUpload
+2.1 - Important! You need to use POST to send the file, ok?
+3 - You`ll need to set the form data, setting 'cnabFile' as paramenter name and choosing the file you want to upload.
+4 - Send it
+5 - Wait for the response
+6 - If the file is valid, please, open a new tab, point to the http://127.0.0.1:9001/cnabFile as a GET request.
+7 - See the magic...

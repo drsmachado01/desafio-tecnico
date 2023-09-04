@@ -1,0 +1,24 @@
+server:
+  port: 9001
+
+spring:
+  name: cnab-api
+  cloud:
+    zookeeper:
+      discovery:
+        enabled: true
+      connect-string: localhost:2181
+        
+  h2:
+    console.enabled: true
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+logging:
+  file: ./log.tmp
+  level:
+    org.apache.zookeeper.ClientCnxn: WARN
